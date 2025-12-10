@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Time Capsule Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>TimeCapsule <span style="font-size:0.5em; color:#555;">PRO</span></h1>
+        <p class="subtitle">Secure. Timed. Future.</p>
+
+        <div id="creation-area">
+            <textarea id="message" placeholder="Write your note for the future here..."></textarea>
+            <label for="date-input">Unlock Date:</label>
+            <input type="datetime-local" id="date-input">
+            <button id="lock-btn">Lock Capsule 🔒</button>
+        </div>
+
+        <div id="display-area" class="hidden">
+            <div id="status-message"></div>
+            
+            <div id="timer" class="hidden">00d 00h 00m 00s</div>
+
+            <div id="secret-content" class="blur-effect"></div>
+            <button id="reset-btn" class="hidden">Create New Capsule 🔄</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

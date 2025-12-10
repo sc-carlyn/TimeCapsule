@@ -1,0 +1,118 @@
+body {
+    background-color: #0f0f12;
+    color: #e0e0e0;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #1a1a1d;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.1);
+    width: 350px;
+    text-align: center;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+}
+
+h1 { color: #00ffcc; margin-bottom: 5px; }
+.subtitle { font-size: 0.8rem; color: #888; margin-bottom: 20px; }
+
+
+textarea {
+    width: 100%;
+    height: 100px;
+    background: #252529;
+    border: 1px solid #444;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+input[type="datetime-local"] {
+    width: 100%;
+    padding: 10px;
+    background: #252529;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background: linear-gradient(45deg, #00ffcc, #008cff);
+    border: none;
+    padding: 10px 20px;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: transform 0.2s;
+}
+
+button:hover { transform: scale(1.05); }
+
+.hidden { display: none; }
+
+
+.blur-effect {
+    filter: blur(8px);
+    user-select: none;
+    background: #222;
+    padding: 20px;
+    margin-top: 10px;
+    color: transparent;
+    cursor: not-allowed;
+    border-radius: 5px;
+}
+
+
+.revealed {
+    filter: none;
+    color: #00ffcc;
+    border: 1px solid #00ffcc;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: text;
+    background: rgba(0, 255, 204, 0.05);
+}
+
+
+#timer {
+    font-size: 1.5rem;
+    color: #ff0055;
+    font-weight: bold;
+    margin: 15px 0;
+    text-shadow: 0 0 10px rgba(255, 0, 85, 0.5);
+    letter-spacing: 2px;
+}
+
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.shake-it {
+    animation: shake 0.5s;
+    border-color: #ff0055; 
+}
