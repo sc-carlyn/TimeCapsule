@@ -36,6 +36,8 @@ Navigate to the folder:
 cd TimeCapsule
 Run the app: Simply open the index.html file in your browser.
 
+---
+
 ## 🎮 How to Use
 Write: Enter a message you want to read in the future.
 
