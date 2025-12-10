@@ -56,4 +56,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-<p align="center"> Made with by <b>İlyas Bildirici</b> </p>
+## ⭐ Support
+
+If you like the project, consider leaving a ⭐ star on the repository.
